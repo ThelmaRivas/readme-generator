@@ -1,6 +1,7 @@
 // Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 inquirer
@@ -49,54 +50,18 @@ inquirer
         },
     ])
     .then((answers) => {
-        // Generate the README file content
-        const readmeContent = `# ${answers.projectName}
-    
-    ${answers.description}
-    
-    ## Table of Contents
-    
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
-    
-    ## Installation
-    
-    \`\`\`
-    ${answers.installation}
-    \`\`\`
+        const readmeContent = generateMarkdown(answers);
 
-    ## Usage
+        fs.writeFile('README.md', readmeContent, (err) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            console.log('README.md file created successfully!');
+        });
+    })
+    .catch((error) => {
+        console.error(error);
+    });
     
-    ${answers.usage}
-    
-    ## License
-    
-    This project is licensed under the ${answers.license} license.
-    
-    ## Contributing
-    
-    ${answers.contributing}
-    
-    ## Tests
-    
-    ${answers.tests}
-    
-    ## Questions
-    
-    ${answers.questions}
-    `;
-       // Write the README file
-       fs.writeFile('README.md', readmeContent, (err) => {
-        if (err) {
-          console.error(err);
-          return;
-        }
-        console.log('README.md file created successfully!');
-      });
-     
-      });
-
+   
