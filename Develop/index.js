@@ -99,7 +99,14 @@ inquirer
     
     ${answers.questions}
     `;
-    
+       // Write the README file
+       fs.writeFile('README.md', readmeContent, (err) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        console.log('README.md file created successfully!');
+      });
      
       });
 
