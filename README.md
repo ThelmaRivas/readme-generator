@@ -33,7 +33,7 @@ Answer all the prompts
 When finished all the questions a message of successful README file created will be displayed
 You can now find your readme with the information provided to the command-line.
 
-Here is a video guide on how to use the Readme Generator --> [Video Guide](https://drive.google.com/file/d/1R2xgjDOfGJsJw_DnDnEN75YvW_yV75jq/view)
+Here is a video guide on how to use the Readme Generator --> [Video Guide](https://drive.google.com/file/d/1Wwu1Y6Rcg3H6LfwCDcR8nUTTCOOr8pAc/view)
 
     
 
