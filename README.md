@@ -2,7 +2,7 @@
     
      A command-line app created using node.js that will help you  generate a README file with all the information needed in a professional README. This app ensures you a good and professional README file in an efficient way.     
     
-    ## Table of Contents
+## Table of Contents
     
     - [Installation](#installation)
     - [Usage](#usage)
@@ -11,7 +11,7 @@
     - [Tests](#tests)
     - [Questions](#questions)
     
-    ## Installation
+## Installation
     1. Clone this repository into your local machine
     2. Open the terminal
     3. Navigate onto the clone repository and make sure to change directory where index.js file is located
@@ -24,7 +24,7 @@
     Enjoy!
       
     
-    ## Usage
+## Usage
     
     First make sure you already install all the dependencies required for the project to work correctly.
 
@@ -37,20 +37,20 @@
 
     
 
-    ## License
+## License
     
     This project is licensed under the MIT.
     
 
-    ## Contributing
+## Contributing
     
     N/A
     
-    ## Tests
+## Tests
     
     N/A
     
-    ## Questions
+## Questions
     
     For more information or questions you can find me on my [Github](https://github.com/ThelmaRivas) or [send me an email](mailto:thelma.rivas00@gmail.com)
 
